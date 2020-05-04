@@ -1,4 +1,4 @@
-package com.example.odev;
+package com.example.odev.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.odev.R;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -32,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (username.equals("admin") && password.equals("admin")) {
                     Toast.makeText(LoginActivity.this,"Başarıyla giriş yaptınız.",Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(intent);
                 }
                 if (!username.equals("admin") || !password.equals("admin")) {

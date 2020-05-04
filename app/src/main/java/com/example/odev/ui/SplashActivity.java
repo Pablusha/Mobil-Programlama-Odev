@@ -1,4 +1,4 @@
-package com.example.odev;
+package com.example.odev.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.odev.R;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -29,7 +31,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent gecis = new Intent(SplashActivity.this,LoginActivity.class);
+                Intent gecis = new Intent(SplashActivity.this, LoginActivity.class);
                 startActivity(gecis);
                 finish();
             }

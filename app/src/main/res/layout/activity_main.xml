@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <TextView
         android:id="@+id/ac_main_tv_url"
@@ -31,8 +31,6 @@
             android:layout_centerInParent="true"/>
     </ScrollView>
 
-
-
     <LinearLayout
         android:id="@+id/ac_main_ll_top"
         android:layout_width="match_parent"
@@ -40,7 +38,7 @@
         android:orientation="vertical"
         android:layout_below="@id/ac_main_rl_first"
         android:visibility="gone">
-        <androidx.appcompat.widget.AppCompatButton
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Button 1"/>
@@ -48,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Button 2"/>
-        <androidx.appcompat.widget.AppCompatTextView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView 1"/>
@@ -63,11 +61,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone">
-        <androidx.appcompat.widget.AppCompatEditText
+        <EditText
             android:id="@+id/ac_main_ac_ed_first"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="aranaca query giriniz:"
+            android:hint="Aranacak Queryi giriniz:"
             android:paddingTop="50dp"/>
         <EditText
             android:id="@+id/ac_main_ed_second"

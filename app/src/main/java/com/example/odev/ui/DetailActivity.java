@@ -1,10 +1,12 @@
-package com.example.odev;
+package com.example.odev.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.odev.R;
 
 public class DetailActivity extends AppCompatActivity {
 

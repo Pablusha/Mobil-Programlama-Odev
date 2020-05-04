@@ -1,7 +1,6 @@
-package com.example.odev;
+package com.example.odev.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatEditText;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -17,6 +16,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.odev.R;
+import com.example.odev.ui.DetailActivity;
 import com.example.odev.utils.NetworkUtils;
 
 import java.io.IOException;
@@ -26,7 +27,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private AppCompatEditText edtQuery;
+    private EditText edtQuery;
     private EditText secondEdT;
     private TextView tvResult, tvUrl;
     private Button btnUygula;
@@ -127,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
             bagla.imgLogo.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent toDetail = new Intent(getApplicationContext(),DetailActivity.class);
+                    Intent toDetail = new Intent(getApplicationContext(), DetailActivity.class);
                     toDetail.putExtra("HEADER",name);
                     toDetail.putExtra("DESCRIPTION",description);
                     startActivity(toDetail);
